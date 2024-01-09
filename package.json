@@ -1,0 +1,19 @@
+{
+  "name": "pyramid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nico",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/jwt": "^7.2.4",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.25.2",
+    "fastify-jwt": "^4.2.0",
+    "fs": "^0.0.1-security"
+  }
+}
