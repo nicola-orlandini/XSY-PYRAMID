@@ -4,6 +4,7 @@ global.fastify = require('fastify')({ logger: true })
 
 const decorate = require('./src/decorate')
 const register = require('./src/register')
+const addHook = require('./src/addHook')
 
 // INIZIALIZZO I register
 for (const registerFunction of register) {
@@ -14,6 +15,12 @@ for (const registerFunction of register) {
 for (const decorateFunction of decorate) {
   decorateFunction()
 }
+
+// INIZIALIZZO I addHook
+for (const addHookFunction of addHook) {
+  addHookFunction()
+}
+
 const server = async () => {
   try {
     await fastify.listen({ port: 3001 })

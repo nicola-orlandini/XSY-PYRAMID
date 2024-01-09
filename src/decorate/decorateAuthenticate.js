@@ -8,7 +8,7 @@ const decorateAuthenticate = () => {
       }
     })
   } catch (error) {
-
+    throw new Error(`ERROR decorateAuthenticate - ${error.message}`)
   }
 }
 

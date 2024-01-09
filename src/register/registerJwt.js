@@ -3,7 +3,7 @@ const jwt = require('@fastify/jwt')
 const registerJwt = () => {
   try {
     fastify.register(jwt, {
-      secret: 'supersecret'
+      secret: 'pippo'
     })
   } catch (error) {
     throw new Error(`ERROR registerJwt - ${error.message}`)
