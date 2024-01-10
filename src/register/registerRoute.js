@@ -22,7 +22,7 @@ function readRoute(directory) {
       const isDirectory = (fs.lstatSync(fullPath)).isDirectory()
       if (isDirectory) {
         const filesInSubdirectory = readRoute(fullPath)
-        fileJSPaths.push(...filesInSubdirectory);
+        fileJSPaths.push(...filesInSubdirectory)
       } else {
         if (path.extname(fullPath).toLowerCase() === '.js') {
           fileJSPaths.push(fullPath)

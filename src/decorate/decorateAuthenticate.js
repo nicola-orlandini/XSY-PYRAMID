@@ -1,8 +1,14 @@
+const withoutAuthentication = [
+  '/auth/login'
+]
+
 const decorateAuthenticate = () => {
   try {
     fastify.decorate('authenticate', async (request, reply) => {
       try {
-        await request.jwtVerify()
+        if (!withoutAuthentication.includes(request.url)) {
+          await request.jwtVerify()
+        }
       } catch (err) {
         reply.send(err)
       }
