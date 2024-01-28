@@ -11,10 +11,12 @@
   "dependencies": {
     "@fastify/helmet": "^11.1.1",
     "@fastify/jwt": "^7.2.4",
+    "async-sema": "^3.1.1",
     "dotenv": "^16.3.1",
     "fastify": "^4.25.2",
     "fastify-jwt": "^4.2.0",
     "fs": "^0.0.1-security",
-    "mercurius": "^13.3.3"
+    "mercurius": "^13.3.3",
+    "mongoose": "^8.1.1"
   }
 }
