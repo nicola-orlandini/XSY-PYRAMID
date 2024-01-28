@@ -1,6 +1,6 @@
-const { handleSuccess } = require("../../reply/handleSuccess")
-const { handleError } = require("../../reply/handleError")
-const { hello } = require('../../mongoDB/schema')
+const { handleSuccess } = require("../../src/reply/handleSuccess")
+const { handleError } = require("../../src/reply/handleError")
+const { hello } = require('../../src/mongoDB/schema')
 
 const getController = async (request, reply) => {
   try {
