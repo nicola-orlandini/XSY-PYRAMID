@@ -1,12 +1,17 @@
 const { getRoutePath } = require('../../../helpers/getRoutePath')
-const { controller } = require('../../controller/auth/login')
-const { validate } = require('../../validate/auth/login')
+const { postController } = require('../../controller/auth/login')
+
+const postSchema = require('../../validate/auth/login')
+
+const postOptions = {
+  schema: postSchema
+}
 
 const routes = async () => {
   fastify.post(
     getRoutePath(__filename),
-    { schema: validate },
-    controller
+    postOptions,
+    postController
   )
 }
 

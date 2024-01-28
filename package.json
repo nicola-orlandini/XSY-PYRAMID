@@ -9,9 +9,11 @@
   "author": "Nico",
   "license": "ISC",
   "dependencies": {
+    "@fastify/formbody": "^7.4.0",
     "@fastify/helmet": "^11.1.1",
     "@fastify/jwt": "^7.2.4",
     "async-sema": "^3.1.1",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
     "fastify": "^4.25.2",
     "fastify-jwt": "^4.2.0",

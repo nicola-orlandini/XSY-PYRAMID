@@ -5,10 +5,7 @@ const handleSuccess = async (reply, data, statusCode = 200) => {
     reply
       .code(statusCode)
       .header('Content-Type', 'application/json; charset=utf-8')
-      .send({
-        statusCode,
-        data
-      })
+      .send({ data })
   } catch (error) {
     handleError(reply, error.message)
   }

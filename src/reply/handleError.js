@@ -4,7 +4,6 @@ const handleError = async (reply, error, statusCode = 500, code = 'GENERIC_ERROR
       .code(statusCode)
       .header('Content-Type', 'application/json; charset=utf-8')
       .send({
-        statusCode: statusCode,
         code: code,
         error: error,
         message: message
