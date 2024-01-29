@@ -6,8 +6,6 @@ const { users } = require('../../../src/mongoDB/schema')
 
 const postController = async (request, reply) => {
   try {
-    // credentials
-    // superAdmin - I4lqfbVdDLFPvkfG
     const userModel = await users()
     const userData = await userModel.findOne({ name: request.body.name })
     if (!userData) {

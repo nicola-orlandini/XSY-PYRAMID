@@ -1,5 +1,5 @@
 const schema = {
-  nome: String,
+  name: String,
   password: String,
   role: [String]
 }
