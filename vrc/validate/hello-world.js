@@ -7,6 +7,15 @@ const getSchema = {
         data: { type: 'string' }
       }
     },
+    "4xx": {
+      additionalProperties: false,
+      type: 'object',
+      properties: {
+        code: { type: 'string' },
+        error: { type: 'string' },
+        message: { type: 'string' }
+      }
+    },
     "5xx": {
       additionalProperties: false,
       type: 'object',

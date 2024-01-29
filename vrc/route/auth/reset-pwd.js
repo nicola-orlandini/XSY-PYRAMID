@@ -1,16 +1,12 @@
+const { requireRole } = require('../../../src/helpers/requireRole')
 const { getRoutePath } = require('../../../src/helpers/getRoutePath')
-const { postController } = require('../../controller/auth/login')
+const { postController } = require('../../controller/auth/reset-pwd')
 
-const postSchema = require('../../validate/auth/login')
+const postSchema = require('../../validate/auth/reset-pwd')
 
 const postOptions = {
   schema: postSchema,
-  config: {
-    rateLimit: {
-      max: 5,
-      timeWindow: '1 minute'
-    }
-  }
+  preHandler: [requireRole(['super_admin'])]
 }
 
 const routes = async () => {

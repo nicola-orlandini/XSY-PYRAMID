@@ -1,13 +1,18 @@
 const { registerJwt } = require('./registerJwt')
-const { registerRoute } = require('./registerRoute')
 const { registerHelmet } = require('./registerHelmet')
 const { registerMercurius } = require('./registerMercurius')
 const { registerFormBody } = require('./registerFormBody')
+const { registerRateLimit } = require('./registerRateLimit')
+// ULTIMA RISORSA DA CARICARE
+const { registerRoute } = require('./registerRoute')
+
 
 module.exports = [
   registerJwt,
-  registerRoute,
   registerHelmet,
   registerMercurius,
-  registerFormBody
+  registerFormBody,
+  registerRateLimit,
+  // ULTIMA RISORSA DA CARICARE
+  registerRoute,
 ]

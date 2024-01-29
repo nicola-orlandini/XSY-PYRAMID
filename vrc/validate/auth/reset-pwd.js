@@ -20,7 +20,7 @@ const postValidate = {
         data: {
           type: 'object',
           properties: {
-            token: {
+            msg: {
               type: 'string'
             }
           }

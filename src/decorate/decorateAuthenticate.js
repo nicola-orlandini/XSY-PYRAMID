@@ -1,3 +1,5 @@
+const { handleError } = require("../reply/handleError")
+
 const withoutAuthentication = [
   '/auth/login'
 ]
@@ -9,8 +11,8 @@ const decorateAuthenticate = () => {
         if (!withoutAuthentication.includes(request.url)) {
           await request.jwtVerify()
         }
-      } catch (err) {
-        reply.send(err)
+      } catch (error) {
+        handleError(reply, error.message)
       }
     })
   } catch (error) {
