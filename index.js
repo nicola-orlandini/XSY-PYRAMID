@@ -3,7 +3,7 @@ require('dotenv').config()
 global.fastify = require('fastify')({ logger: true })
 
 // INIZIALIZZO database
-const dbName = 'fastifyDB'
+const dbName = process.env.NAME_DB
 const Db = require('./src/mongoDB')
 const db = new Db(dbName)
 global.db = db

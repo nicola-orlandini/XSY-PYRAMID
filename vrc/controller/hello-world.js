@@ -5,7 +5,7 @@ const { hello } = require('../../src/mongoDB/schema')
 const getController = async (request, reply) => {
   try {
     // scrivo a db
-    const collectionModel = await db.getCollection('helloCollection', hello())
+    const collectionModel = await hello()
     const collectionIstance = new collectionModel
     collectionIstance.nome = 'primo documento'
     collectionIstance.idNumerico = 1

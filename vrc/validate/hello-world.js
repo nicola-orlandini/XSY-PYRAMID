@@ -1,15 +1,4 @@
 const getSchema = {
-  querystring: {
-    additionalProperties: false,
-    type: 'object',
-    properties: {
-      test: {
-        type: 'string',
-        enum: ['test1', 'test2']
-      }
-    },
-    required: ['test']
-  },
   response: {
     "2xx": {
       additionalProperties: false,
