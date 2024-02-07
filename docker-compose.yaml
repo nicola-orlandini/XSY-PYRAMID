@@ -4,6 +4,10 @@ services:
     image: pyramid
     ports:
       - "3001:3001"
+    volumes:
+      - ./index.js:/usr/src/app/index.js
+      - ./src:/usr/src/app/src
+      - ./vrc:/usr/src/app/vrc
     depends_on:
       - mongodb
 
@@ -12,4 +16,4 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ~/Mongo/pyramid:/data/db
+      - ./mongodb/data:/data/db

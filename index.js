@@ -30,10 +30,10 @@ for (const addHookFunction of addHook) {
 const server = async () => {
   try {
     await fastify.listen({ host: '0.0.0.0', port: 3001 })
-    fastify.log.info(`Server in ascolto sulla porta ${fastify.server.address().port}`)
+    // fastify.log.info(`Server in ascolto sulla porta ${fastify.server.address().port}`)
     console.log(`Server in ascolto sulla porta ${fastify.server.address().port}`)
   } catch (err) {
-    fastify.log.error(err)
+    // fastify.log.error(err)
     console.log(err.message)
     process.exit(0)
   }
