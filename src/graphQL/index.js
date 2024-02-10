@@ -10,8 +10,8 @@ const { personaResolvers } = require('./resolvers/personaResolvers.js')
 const index = () => {
     return mergeSchemas({
         schemas: [
+            makeExecutableSchema({ typeDefs: personaSchema, resolvers: personaResolvers }),
             makeExecutableSchema({ typeDefs: animaleSchema, resolvers: animaleResolvers }),
-            makeExecutableSchema({ typeDefs: personaSchema, resolvers: personaResolvers })
         ]
     })
 }

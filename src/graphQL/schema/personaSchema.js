@@ -4,11 +4,15 @@ const personaSchema = `
     via: String
   }
 
-  type Query {
+  type Persona {
     hello: String,
     name: String,
     age: Int,
     adress: Adress
+  }
+
+  type Query {
+    persone: [Persona]
   }
   `
 

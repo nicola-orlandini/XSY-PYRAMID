@@ -1,8 +1,12 @@
 const animaleSchema = `
+  type Animale {
+    hello: String,
+    name: String,
+    age: Int
+  }
+
   type Query {
-    helloAnimals: String,
-    nameAniamals: String,
-    ageAniamals: Int
+    animali: [Animale]
   }
   `
 

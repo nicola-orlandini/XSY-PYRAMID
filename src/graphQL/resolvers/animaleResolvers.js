@@ -1,8 +1,14 @@
 const animaleResolvers = {
   Query: {
-    helloAnimals: () => { return 'Ciao, animale!' },
-    nameAniamals: () => { return 'Lupo' },
-    ageAniamals: () => { return 4 }
+    animali: () => {
+      return [
+        {
+          hello: () => { return 'Ciao, animale!' },
+          name: () => { return 'Lupo' },
+          age: () => { return 4 }
+        }
+      ]
+    }
   }
 }
 
