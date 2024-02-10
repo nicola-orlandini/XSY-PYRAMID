@@ -1,5 +1,5 @@
-const { requireRole } = require('../../../src/helpers/requireRole')
-const { getRoutePath } = require('../../../src/helpers/getRoutePath')
+const { requireRole } = require('../../../src/utils/requireRole')
+const { getRoutePath } = require('../../../src/utils/getRoutePath')
 const { postController } = require('../../controller/auth/reset-pwd')
 
 const postSchema = require('../../validate/auth/reset-pwd')

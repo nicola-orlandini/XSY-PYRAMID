@@ -1,4 +1,4 @@
-const { getRoutePath } = require('../../../src/helpers/getRoutePath')
+const { getRoutePath } = require('../../../src/utils/getRoutePath')
 const { postController } = require('../../controller/auth/login')
 
 const postSchema = require('../../validate/auth/login')

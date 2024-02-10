@@ -7,7 +7,7 @@ const Db = require('../src/mongoDB')
 const db = new Db(dbName)
 global.db = db
 
-const { users } = require('../src/mongoDB/schema')
+const { users } = require('../src/mongoDB/model')
 
 // !!! ATTENZIONE !!!
 // CON QUESTA FUNZIONE VENGONO RESETTATI TUTTI GLI USER DEL DATABASE

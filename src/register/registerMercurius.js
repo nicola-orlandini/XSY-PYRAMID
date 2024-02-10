@@ -1,15 +1,10 @@
 const mercurius = require('mercurius')
-const resolversQuery = require('../graphQL/resolvers/query')
-const schema = require('../graphQL/schema')
+const schema = require('../graphQL')
 
 const registerMercurius = () => {
   try {
-    const resolvers = {
-      Query: resolversQuery
-    }
     fastify.register(mercurius, {
-      schema: schema,
-      resolvers,
+      schema,
       path: '/prisma'
     })
   } catch (error) {

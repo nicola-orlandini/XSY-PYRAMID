@@ -1,6 +1,6 @@
 const { handleSuccess } = require("../../src/reply/handleSuccess")
 const { handleError } = require("../../src/reply/handleError")
-const { hello } = require('../../src/mongoDB/schema')
+const { hello } = require('../../src/mongoDB/model')
 
 const getController = async (request, reply) => {
   try {

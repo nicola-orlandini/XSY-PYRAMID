@@ -2,4 +2,5 @@
 .vscode
 package-lock.json
 .env
-/mongodb
+/.data-mongodb
+.DS_Store

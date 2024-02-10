@@ -1,5 +1,5 @@
-const { requireRole } = require('../../src/helpers/requireRole')
-const { getRoutePath } = require('../../src/helpers/getRoutePath')
+const { requireRole } = require('../../src/utils/requireRole')
+const { getRoutePath } = require('../../src/utils/getRoutePath')
 const { getController } = require('../controller/hello-world')
 
 const getSchema = require('../validate/hello-world')
