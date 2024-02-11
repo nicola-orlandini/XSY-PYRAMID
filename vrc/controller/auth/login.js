@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt')
 const { handleSuccess } = require('../../../src/reply/handleSuccess')
 const { handleError } = require('../../../src/reply/handleError')
 const { users } = require('../../../src/mongoDB/model')
+const { encrypt } = require('../../../src/utils/encrypt')
 
 const postController = async (request, reply) => {
   try {
@@ -16,7 +17,7 @@ const postController = async (request, reply) => {
       throw new Error('password not correct')
     }
     const token = fastify.jwt.sign({ name: userData._doc.name, role: userData._doc.role })
-    handleSuccess(reply, { token })
+    handleSuccess(reply, { token: encrypt(token) })
   } catch (error) {
     handleError(reply, error.message)
   }
