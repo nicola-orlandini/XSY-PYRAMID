@@ -16,8 +16,9 @@ const postController = async (request, reply) => {
     if (!match) {
       throw new Error('password not correct')
     }
-    const token = fastify.jwt.sign({ name: userData._doc.name, role: userData._doc.role })
-    handleSuccess(reply, { token: encrypt(token) })
+    const token = fastify.jwt.sign({ name: userData._doc.name, role: userData._doc.role, secret: userData._doc.secret })
+    const tokenEncrypt = encrypt(token)
+    handleSuccess(reply, { token: tokenEncrypt })
   } catch (error) {
     handleError(reply, error.message)
   }

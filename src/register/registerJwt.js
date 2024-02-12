@@ -5,7 +5,8 @@ const registerJwt = () => {
     fastify.register(jwt, {
       secret: process.env.SECRET,
       sign: {
-        expiresIn: parseInt(process.env.EXPIRES_TOKEN_LOGIN)
+        // expiresIn: parseInt(process.env.EXPIRES_TOKEN_LOGIN)
+        expiresIn: null
       }
     })
   } catch (error) {

@@ -1,5 +1,6 @@
 const { decrypt } = require('../utils/decrypt')
 const { handleError } = require("../reply/handleError")
+const { checkTokenUser } = require('../utils/checkTokenUser')
 
 const withoutAuthentication = [
   '/auth/login'
@@ -14,6 +15,11 @@ const decorateAuthenticate = () => {
           const decryptdeToken = decrypt(token)
           request.headers.authorization = `Bearer ${decryptdeToken}`
           await request.jwtVerify()
+          const dataToken = fastify.jwt.decode(decryptdeToken)
+          const secret = await checkTokenUser(dataToken.name)
+          if (dataToken.secret !== secret) {
+            throw new Error('token expired, login required')
+          }
         }
       } catch (error) {
         handleError(reply, error.message)
