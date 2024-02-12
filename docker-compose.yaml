@@ -10,6 +10,8 @@ services:
       - ./vrc:/usr/src/app/vrc
     depends_on:
       - mongodb
+    environment:
+      MONGO_URI: "mongodb://mongodb"
 
   mongodb:
     image: mongo
