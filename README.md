@@ -1,4 +1,4 @@
-# Nome del Progetto
+# Pyramid
 
 Pyramid è un templete estremamente flessibile per sviluppare server per chiamate restAPI e graphQL in nodeJS.
 
