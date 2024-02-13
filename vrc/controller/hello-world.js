@@ -1,14 +1,14 @@
 const { handleSuccess } = require("../../src/reply/handleSuccess")
 const { handleError } = require("../../src/reply/handleError")
-const { hello } = require('../../src/mongoDB/model')
+const { helloWorld } = require('../../src/mongoDB/model')
 
 const getController = async (request, reply) => {
   try {
     // scrivo a db
-    const collectionModel = await hello()
+    const collectionModel = await helloWorld()
     const collectionIstance = new collectionModel
-    collectionIstance.nome = 'primo documento'
-    collectionIstance.idNumerico = 1
+    collectionIstance.nome = request.user.name
+    collectionIstance.text = 'Hello World! :-)'
     await collectionIstance.save()
 
     // rispondo

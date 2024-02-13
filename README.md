@@ -64,4 +64,25 @@ Variabili d'ambiente:
 
 ## Utilizzo
 
+Pyramid offre due approcci flessibili per la creazione di server web, permettendo agli sviluppatori di scegliere la metodologia più adatta alle proprie esigenze.
+
+- 🚀 Approccio REST API:
+
+Pyramid supporta l'approccio classico REST API, consentendo di organizzare facilmente le risorse tramite la seguente struttura all'interno della directory "./vrc":
+    - `/vrc/validate`: Contiene i file per la validazione dei dati utilizzando i validatori di Fastify.
+    - `/vrc/route`: Include i file delle route di Fastify, dove ogni percorso definisce il proprio URL, ad esempio, una route in "./vrc/route/auth/login.js" risponderà all'URL "localhost/auth/login".
+    - `./vrc/controller`: Racchiude i controller di Fastify, che gestiscono la logica delle route per i vari metodi come GET, POST, DELETE e PATCH.
+
+Questo approccio consente di strutturare chiaramente la gestione delle richieste e delle risposte attraverso le convenzioni REST, fornendo una base solida per la creazione di API scalabili.
+
+- 🧬 Approccio GraphQL:
+
+Per coloro che preferiscono utilizzare GraphQL, Pyramid offre un server GraphQL in ascolto all'indirizzo POST "localhost/prisma". La struttura di questo approccio è organizzata nella directory "/src/graphQL":
+    - `/src/graphQL/resolvers`: Contiene i resolvers, che definiscono come soddisfare le richieste GraphQL.
+    - `/src/graphQL/schema`: Include gli schemi GraphQL che definiscono la struttura e i tipi di dati supportati dal server.
+
+Con questo approccio, gli sviluppatori possono sfruttare la potenza di GraphQL per gestire le query e le mutazioni in modo efficiente, organizzando facilmente le risorse del server GraphQL.
+
+Pyramid offre, dunque, un'architettura flessibile che si adatta alle preferenze e alle esigenze specifiche del progetto, permettendo di creare server web con facilità e strutturati in modo chiaro.
+
 ## Configurazione

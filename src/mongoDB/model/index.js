@@ -1,7 +1,7 @@
-const { hello } = require('./hello')
+const { helloWorld } = require('./helloWorld')
 const { users } = require('./users')
 
 module.exports = {
-  hello,
+  helloWorld,
   users
 }
