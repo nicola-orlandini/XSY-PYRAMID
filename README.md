@@ -1,4 +1,4 @@
-# Pyramid
+# 🏛 PYRAMID 🏛
 
 Pyramid è un templete estremamente flessibile per sviluppare server per chiamate restAPI e graphQL in nodeJS.
 
@@ -14,17 +14,28 @@ Pyramid è un templete estremamente flessibile per sviluppare server per chiamat
 
 ## Descrizione
 
-Pyramid sfrutta e interagisce con le seguenti tecnologie:
+Pyramid: Tecnologie Utilizzate
 
-- docker
-- mongodb
-- redis
-- graphQL
-- fastify
+Pyramid è un progetto che sfrutta diverse tecnologie per offrire funzionalità avanzate. Di seguito sono elencate e descritte le principali tecnologie coinvolte:
+
+1. Docker 🐳
+    Pyramid utilizza Docker per la gestione dei container. Questa tecnologia permette di creare un ambiente isolato, semplificando così il processo di distribuzione e l'esecuzione del server.
+
+2. MongoDB 🍃
+    La base dati di Pyramid è supportata da MongoDB offrendo flessibilità nello schema e prestazioni ottimizzate per gestire grandi quantità di dati.
+
+3. Redis 🗃️
+    Pyramid ottimizza le prestazioni dell'applicazione utilizzando Redis come sistema di archiviazione chiave-valore in memoria.
+
+4. GraphQL 🧬
+    Pyramid sfrutta GraphQL per consentire una comunicazione flessibile e efficiente tra il frontend e il backend, facilitando la gestione delle richieste di dati.
+
+5. Fastify 🚀
+    Pyramid utilizza Fastify come framework web per gestire le richieste HTTP, garantendo un'elaborazione rapida e una risposta reattiva.
 
 ## Requisiti
 
-- Docker
+- 🐳 docker
 
 ## Installazione
 
