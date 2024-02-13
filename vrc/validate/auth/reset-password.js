@@ -3,14 +3,11 @@ const postValidate = {
     additionalProperties: false,
     type: 'object',
     properties: {
-      name: {
-        type: 'string'
-      },
       password: {
         type: 'string'
       }
     },
-    required: ['name', 'password']
+    required: ['password']
   },
   response: {
     "2xx": {

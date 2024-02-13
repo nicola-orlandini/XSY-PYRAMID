@@ -7,7 +7,7 @@ const { users } = require('../../../src/mongoDB/model')
 const postController = async (request, reply) => {
   try {
     const userModel = await users()
-    const userData = await userModel.findOne({ name: request.body.name })
+    const userData = await userModel.findOne({ name: request.user.name })
     if (!userData) {
       throw new Error('user not exists')
     }

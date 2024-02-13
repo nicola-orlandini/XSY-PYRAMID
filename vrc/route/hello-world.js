@@ -6,7 +6,7 @@ const getSchema = require('../validate/hello-world')
 
 const getOptions = {
   schema: getSchema,
-  preHandler: [requireRole(['super_admin'])]
+  preHandler: [requireRole(['super_admin', 'user'])]
 }
 
 const routes = async () => {
