@@ -64,12 +64,12 @@ INIT_MONGO_USER = admin
 INIT_MONGO_PASSWORD = password
 ```
 
-- DB_NAME: definisce il nome del databse
-- MONGO_URI: definisce l'url in cui è in ascolto il server mongodb
-- MONGO_PORT: definisce la porta in cui è in ascolto il servver mongodb
-- SECRET definisce una chiave privata randomica del server per proteggere con crittografia i dati sensibili del server
-- INIT_MONGO_USER: definisce il nome dell'utente in fase di inizializzazione del server
-- INIT_MONGO_PASSWORD: definisce la password dell'utente admin in fase di inizializzazione del server
+- **DB_NAME** definisce il nome del databse
+- **MONGO_URI** definisce l'url in cui è in ascolto il server mongodb
+- **MONGO_PORT** definisce la porta in cui è in ascolto il servver mongodb
+- **SECRET** definisce una chiave privata randomica del server per proteggere con crittografia i dati sensibili del server
+- **INIT_MONGO_USER** definisce il nome dell'utente in fase di inizializzazione del server
+- **INIT_MONGO_PASSWORD** definisce la password dell'utente admin in fase di inizializzazione del server
 
 ## Utilizzo
 

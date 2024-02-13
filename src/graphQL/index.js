@@ -1,17 +1,17 @@
 const { makeExecutableSchema } = require('@graphql-tools/schema')
 const { mergeSchemas } = require('@graphql-tools/schema')
 
-const { animaleSchema } = require('./schema/animaleSchema.js')
-const { animaleResolvers } = require('./resolvers/animaleResolvers.js')
+const { libroSchema } = require('./schema/libroSchema.js')
+const { libroResolvers } = require('./resolvers/libroResolvers.js')
 
-const { personaSchema } = require('./schema/personaSchema.js')
-const { personaResolvers } = require('./resolvers/personaResolvers.js')
+const { filmSchema } = require('./schema/filmSchema.js')
+const { filmResolvers } = require('./resolvers/filmResolvers.js')
 
 const index = () => {
     return mergeSchemas({
         schemas: [
-            makeExecutableSchema({ typeDefs: personaSchema, resolvers: personaResolvers }),
-            makeExecutableSchema({ typeDefs: animaleSchema, resolvers: animaleResolvers }),
+            makeExecutableSchema({ typeDefs: libroSchema, resolvers: libroResolvers }),
+            makeExecutableSchema({ typeDefs: filmSchema, resolvers: filmResolvers }),
         ]
     })
 }
