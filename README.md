@@ -39,7 +39,7 @@ Pyramid utilizza Fastify come framework web per gestire le richieste HTTP, garan
 
 ## Requisiti
 
-- 🐳 docker
+- 🐳 Docker
 
 ## Installazione
 
