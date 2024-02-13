@@ -55,12 +55,21 @@ docker compose up
 
 Variabili d'ambiente:
 
-- DB_NAME = [nome database]
-- MONGO_URI = [127.0.0.1]
-- MONGO_PORT = [27017]
-- SECRET = [chiave randomica del server]
-- INIT_MONGO_USER = [mongodb user]
-- INIT_MONGO_PASSWORD = [mongodb password]
+```bash
+DB_NAME = pyramid
+MONGO_URI = mongodb://127.0.0.1
+MONGO_PORT = 27017
+SECRET = aaaBBBccc
+INIT_MONGO_USER = admin
+INIT_MONGO_PASSWORD = password
+```
+
+- DB_NAME: definisce il nome del databse
+- MONGO_URI: definisce l'url in cui è in ascolto il server mongodb
+- MONGO_PORT: definisce la porta in cui è in ascolto il servver mongodb
+- SECRET definisce una chiave privata randomica del server per proteggere con crittografia i dati sensibili del server
+- INIT_MONGO_USER: definisce il nome dell'utente in fase di inizializzazione del server
+- INIT_MONGO_PASSWORD: definisce la password dell'utente admin in fase di inizializzazione del server
 
 ## Utilizzo
 
