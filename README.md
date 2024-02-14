@@ -13,7 +13,7 @@ Pyramid è un template per server web REST API e GraphQL in Node.js
 ## Descrizione
 Pyramid è un progetto con obiettivo di essere un template flessibile per la creazione di server web REST API o GraphQL, implementati in Node.js. Questo framework fornisce una solida base su cui costruire applicazioni scalabili e performanti, consentendo agli sviluppatori di concentrarsi sulle funzionalità specifiche del loro progetto senza dover partire da zero.
 
-Tecnologie Utilizzate
+**Tecnologie Utilizzate**
 
 Pyramid è un progetto che sfrutta diverse tecnologie per offrire funzionalità avanzate. Di seguito sono elencate e descritte le principali tecnologie coinvolte:
 
