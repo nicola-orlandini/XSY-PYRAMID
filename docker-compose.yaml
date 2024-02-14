@@ -12,6 +12,7 @@ services:
       - mongodb
       - redisdb
     environment:
+      API_URI: "0.0.0.0"
       MONGO_URI: "mongodb://mongodb"
       REDIS_URI: "redisdb"
 
