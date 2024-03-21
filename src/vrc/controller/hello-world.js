@@ -1,6 +1,6 @@
-const { handleSuccess } = require("../../src/reply/handleSuccess")
-const { handleError } = require("../../src/reply/handleError")
-const { helloWorld } = require('../../src/mongoDB/model')
+const { handleSuccess } = require("../../reply/handleSuccess")
+const { handleError } = require("../../reply/handleError")
+const { helloWorld } = require('../../mongoDB/model')
 
 const getController = async (request, reply) => {
   try {
@@ -12,7 +12,7 @@ const getController = async (request, reply) => {
     await collectionIstance.save()
 
     // rispondo
-    handleSuccess(reply, 'SUCCESS')
+    handleSuccess(reply, 'Hello World! :-)')
   } catch (error) {
     handleError(reply, error.message)
   }

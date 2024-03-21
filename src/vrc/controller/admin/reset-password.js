@@ -1,5 +1,5 @@
-const { handleSuccess } = require("../../../src/reply/handleSuccess")
-const { handleError } = require("../../../src/reply/handleError")
+const { handleSuccess } = require("../../../reply/handleSuccess")
+const { handleError } = require("../../../reply/handleError")
 
 const postController = async (request, reply) => {
   try {

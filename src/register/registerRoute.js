@@ -3,7 +3,7 @@ const path = require('path')
 
 const registerRoute = () => {
   try {
-    const fileDir = readRoute(`${__dirname}/../../vrc/route`)
+    const fileDir = readRoute(`${__dirname}/../vrc/route`)
     for (const routePath of fileDir) {
       const { routes } = require(routePath)
       fastify.register(routes)

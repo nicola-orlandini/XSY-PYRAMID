@@ -29,7 +29,7 @@ const initUser = async () => {
     await usersData.save()
 
     console.log('+++ RESET COMPLETATO +++')
-    console.log('\nNOTE DI SICUREZZA: SOSTITUISCI LA PASSWORD DI super_admin CON \'/auth/reset-pwd\'')
+    console.log('\nNOTE DI SICUREZZA: SOSTITUISCI LA PASSWORD DI super_admin CON \'/auth/reset-password\'')
   } catch (error) {
     console.log(`ERROR initUser - ${error.message}`)
   } finally {

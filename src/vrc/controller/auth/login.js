@@ -1,9 +1,9 @@
 const bcrypt = require('bcrypt')
 
-const { handleSuccess } = require('../../../src/reply/handleSuccess')
-const { handleError } = require('../../../src/reply/handleError')
-const { users } = require('../../../src/mongoDB/model')
-const { encrypt } = require('../../../src/utils/encrypt')
+const { handleSuccess } = require('../../../reply/handleSuccess')
+const { handleError } = require('../../../reply/handleError')
+const { users } = require('../../../mongoDB/model')
+const { encrypt } = require('../../../utils/encrypt')
 
 const postController = async (request, reply) => {
   try {

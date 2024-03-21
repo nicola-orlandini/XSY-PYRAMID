@@ -3,5 +3,5 @@ node_modules
 .env.example
 .vscode
 package-lock.json
-/.data-mongodb
+/.data
 .DS_Store

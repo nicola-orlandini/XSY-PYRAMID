@@ -11,7 +11,7 @@ Pyramid è un template per server web REST API e GraphQL in Node.js
 5. [Configurazione](#configurazione)
 
 ## Descrizione
-Pyramid è un progetto con obiettivo di essere un template flessibile per la creazione di server web REST API o GraphQL, implementati in Node.js. Questo framework fornisce una solida base su cui costruire applicazioni scalabili e performanti, consentendo agli sviluppatori di concentrarsi sulle funzionalità specifiche del loro progetto senza dover partire da zero.
+Pyramid è un progetto con obiettivo di essere un template flessibile per la creazione di server web REST API o GraphQL, implementati in Node.js. Questo framework fornisce una base su cui costruire applicazioni scalabili e performanti.
 
 **Tecnologie Utilizzate**
 
@@ -19,23 +19,23 @@ Pyramid è un progetto che sfrutta diverse tecnologie per offrire funzionalità 
 
 - 🐳 Docker
 
-Pyramid utilizza Docker per la gestione dei container. Questa tecnologia permette di creare un ambiente isolato, semplificando così il processo di distribuzione e l'esecuzione del server.
+per isolare l'ambiente di esecuzione semplificando così il deploy in produzione.
 
 - 🍃 MongoDB
 
-La base dati di Pyramid è supportata da MongoDB offrendo flessibilità nello schema e prestazioni ottimizzate per gestire grandi quantità di dati.
+per avere una base dati flessibile e performante.
 
 - 🗃️ Redis
 
-Pyramid ottimizza le prestazioni dell'applicazione utilizzando Redis come sistema di archiviazione chiave-valore in memoria.
+per sistemi di caching, aiuta a ottimizzare i tempi di risposta del server e le risorse utilizzate.
 
 - 🧬 GraphQL
 
-Pyramid sfrutta GraphQL per consentire una comunicazione flessibile e efficiente tra il frontend e il backend, facilitando la gestione delle richieste di dati.
+per consentire una comunicazione flessibile e efficiente tra il frontend e il backend in alternativa all'approccio restAPI.
 
 - 🚀 Fastify
 
-Pyramid utilizza Fastify come framework web per gestire le richieste HTTP, garantendo un'elaborazione rapida e una risposta reattiva.
+per gestire in modo organizzato le richieste HTTP, garantendo un'elaborazione rapida e una risposta reattiva.
 
 ## Requisiti
 
@@ -77,13 +77,13 @@ Pyramid offre due approcci flessibili per la creazione di server web, permettend
 
 🚀 **Approccio REST API:**
 
-Pyramid supporta l'approccio classico REST API, consentendo di organizzare facilmente le risorse tramite la seguente struttura all'interno della directory "./vrc":
+Pyramid supporta l'approccio classico REST API, consentendo di organizzare facilmente le risorse tramite la seguente struttura all'interno della directory "./src/vrc":
 
-- `/vrc/validate`: Contiene i file per la validazione dei dati utilizzando i validatori di Fastify.
+- `./src/vrc/validate`: Contiene i file per la validazione dei dati utilizzando i validatori di Fastify.
 
-- `/vrc/route`: Include i file delle route di Fastify, dove ogni percorso definisce il proprio URL, ad esempio, una route in "./vrc/route/auth/login.js" risponderà all'URL "localhost/auth/login".
+- `./src/vrc/route`: Include i file delle route di Fastify, dove ogni percorso definisce il proprio URL, ad esempio, una route in "./vrc/route/auth/login.js" risponderà all'URL "localhost/auth/login".
 
-- `/vrc/controller`: Racchiude i controller di Fastify, che gestiscono la logica delle route per i vari metodi come GET, POST, DELETE e PATCH.
+- `./src/vrc/controller`: Racchiude i controller di Fastify, che gestiscono la logica delle route per i vari metodi come GET, POST, DELETE e PATCH.
 
 Questo approccio consente di strutturare chiaramente la gestione delle richieste e delle risposte attraverso le convenzioni REST, fornendo una base solida per la creazione di API scalabili.
 
@@ -95,8 +95,5 @@ Per coloro che preferiscono utilizzare GraphQL, Pyramid offre un server GraphQL 
 
 - `/src/graphQL/schema`: Include gli schemi GraphQL che definiscono la struttura e i tipi di dati supportati dal server.
 
-Con questo approccio, gli sviluppatori possono sfruttare la potenza di GraphQL per gestire le query e le mutazioni in modo efficiente, organizzando facilmente le risorse del server GraphQL.
-
 Pyramid offre, dunque, un'architettura flessibile che si adatta alle preferenze e alle esigenze specifiche del progetto, permettendo di creare server web con facilità e strutturati in modo chiaro.
 
-## Configurazione
