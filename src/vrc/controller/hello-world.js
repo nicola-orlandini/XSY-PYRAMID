@@ -4,7 +4,7 @@ const { helloWorld } = require('../../mongoDB/model')
 
 const getController = async (request, reply) => {
   try {
-    // scrivo a db
+    // scrivo a  db
     const collectionModel = await helloWorld()
     const collectionIstance = new collectionModel
     collectionIstance.nome = request.user.name
