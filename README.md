@@ -1,6 +1,6 @@
 # 🏛 PYRAMID 🏛
 
-Pyramid è un template per server web REST API e GraphQL in Node.js
+Pyramid è un template per server web REST API e GraphQL in Nodejs
 
 ## Indice
 
@@ -11,7 +11,7 @@ Pyramid è un template per server web REST API e GraphQL in Node.js
 5. [Configurazione](#configurazione)
 
 ## Descrizione
-Pyramid è un progetto con obiettivo di essere un template flessibile per la creazione di server web REST API o GraphQL, implementati in Node.js. Questo framework fornisce una base su cui costruire applicazioni scalabili e performanti.
+Pyramid è un progetto con obiettivo di essere un template flessibile per la creazione di server web REST API o GraphQL, implementati in Nodejs. Questo framework fornisce una base su cui costruire applicazioni scalabili e performanti.
 
 **Tecnologie Utilizzate**
 
