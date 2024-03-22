@@ -47,7 +47,7 @@ Ambiente:
 ```bash
 mkdir ~/pyramid
 cd ~/pyramid
-git git@github.com:nicola-orlandini/XSY-PYRAMID.git ./
+git clone git@github.com:nicola-orlandini/XSY-PYRAMID.git ./
 npm install
 docker compose up
 ```
