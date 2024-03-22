@@ -1,6 +1,6 @@
 # 🏛 PYRAMID 🏛
 
-Pyramid è un template per server web REST API e GraphQL in Nodejs
+Pyramid è un template per server web REST API e GraphQL in Nodejs 
 
 ## Indice
 
