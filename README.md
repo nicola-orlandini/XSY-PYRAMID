@@ -90,9 +90,9 @@ Questo approccio consente di strutturare chiaramente la gestione delle richieste
 
 Per coloro che preferiscono utilizzare GraphQL, Pyramid offre un server GraphQL in ascolto all'indirizzo POST "localhost/prisma". La struttura di questo approccio è organizzata nella directory "/src/graphQL":
 
-- `/src/graphQL/resolvers`: Contiene i resolvers, che definiscono come soddisfare le richieste GraphQL.
+- `./src/graphQL/resolvers`: Contiene i resolvers, che definiscono come soddisfare le richieste GraphQL.
 
-- `/src/graphQL/schema`: Include gli schemi GraphQL che definiscono la struttura e i tipi di dati supportati dal server.
+- `./src/graphQL/schema`: Include gli schemi GraphQL che definiscono la struttura e i tipi di dati supportati dal server.
 
 Pyramid offre, dunque, un'architettura flessibile che si adatta alle preferenze e alle esigenze specifiche del progetto, permettendo di creare server web con facilità e strutturati in modo chiaro.
 
